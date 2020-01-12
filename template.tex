@@ -1,0 +1,192 @@
+% !TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$fontsize$, a4paper]{article}
+
+% LAYOUT
+%--------------------------------
+% Margins
+\usepackage{geometry} 
+\geometry{$geometry$}
+
+% Left align
+\usepackage[document]{ragged2e}
+
+% Do not indent paragraphs
+\setlength\parindent{0in}
+\setlength\itemindent{0em}
+
+% Trim excessive whitespace before lists
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+% Enable multicolumns
+\usepackage{multicol}
+% \setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+
+% LANGUAGE
+%--------------------------------
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+% MARGIN NOTES
+%--------------------------------
+\usepackage{marginnote}
+\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\setlength{\marginparsep}{1em}
+\reversemarginpar
+
+% HEADINGS
+%--------------------------------
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries} 
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup
+{
+  pdfauthor={$name$},
+  pdfsubject={$name$'s CV},
+  pdftitle={$name$'s CV},
+  colorlinks, breaklinks, xetex, bookmarks,
+  filecolor=black,
+  urlcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  citecolor=[rgb]{0.117,0.682,0.858}
+}
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+
+{\huge $name$}\\[1em]
+
+$for(who)$
+{\large $who$}\\
+$endfor$
+
+\begin{multicols}{2}
+
+$for(address)$
+$address$\\
+$endfor$
+
+\href{mailto:$email$}{$email$}\\
+$phone$\\
+
+\vspace{1em}
+
+$if(urls)$
+$for(urls)$
+\href{https://$urls$}{$urls$}\\
+$endfor$
+$endif$
+
+\columnbreak
+
+\end{multicols}
+
+\vspace{1em}
+
+\note{About}
+$for(intro)$
+$intro$\\
+$endfor$
+
+\vspace{1em}
+
+$if(skills)$
+\note{Skills}
+\begin{minipage}[t]{0.5\textwidth}
+    \small{$skills.architecture$}
+\end{minipage}
+\vspace{0.5em}
+\begin{minipage}[t]{0.5\textwidth}
+    \small{$skills.programming_languages$}
+\end{minipage}
+\vspace{0.5em}
+\begin{minipage}[t]{0.5\textwidth}
+    \small{$skills.data_engineering$}
+\end{minipage}
+\vspace{0.5em}
+\begin{minipage}[t]{0.5\textwidth}
+    \small{$skills.others$}
+\end{minipage}
+\vspace{1em}
+$endif$
+
+$if(languages)$
+\note{Languages}
+\small{$languages$}\\
+$endif$
+
+\vspace{2em}
+% \vfill
+
+\section*{Previous Experience}
+$for(experience)$
+\begin{minipage}[t]{1\textwidth}
+    \note{$experience.years$} \textbf{$experience.job$} @ \textmd{$experience.employer$}\\
+    $if(experience.city)$\emph{$experience.city$}$endif$
+    \vspace{0.2em}
+    $if(experience.duties)$
+    \begingroup
+        \fontsize{$subfontsize$}{$sublinespacing$}\selectfont
+        % \emph{Duties and responsibilities:}\\[.2em]
+        \begin{itemize}[leftmargin=0.5cm]
+            $for(experience.duties)$
+            \item[--] $experience.duties$
+            $endfor$
+        \end{itemize}
+    \endgroup
+    $endif$
+    \vspace{2em}
+\end{minipage}
+$endfor$
+
+$if(education)$
+\section*{Education}
+$for(education)$
+\note{$education.year$}
+$if(education.degree)$$education.degree$ in $endif$
+\textbf{$education.subject$}\\
+\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
+$endfor$
+$endif$
+
+$if(certification)$
+\section*{Certification}
+\noindent
+$for(certification)$
+\note{$certification.year$}\textbf{$certification.subject$}
+$if(certification.issuer)$ \emph{$certification.issuer$}$endif$
+$if(certification.issuer)$ (\href{$certification.url$}{view})$endif$\\
+\vspace{.5em}
+$endfor$
+$endif$
+
+
+
+\end{document}

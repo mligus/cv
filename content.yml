@@ -1,0 +1,192 @@
+---
+# Personal details
+name: Maksym Ligus
+who:
+- Lead Data Engineer
+address:
+- Kyiv, Ukraine
+phone: "+380 XX XXX-XX-XX"
+email: john.doe@cloud.xyz
+# Insert URLs without http://
+urls:
+- linkedin.com/in/mligus
+- github.com/mligus
+
+# Sections
+
+intro:
+  - I am a Data Engineer with 10+ years of experience in software engineering. During this period I had the luck to lead amazing engineering teams - small and large, distributed and localized. I have been designing, implementing and supporting Analytics, Data Warehousing, and other data-intensive large-scale systems from the requirements stage to production.
+  - My extensive experience in performing pre-sale engagements with follow-up discovery and implementation phases helped multiple clients to achieve their business goals in the most optimal way.
+  - I love Python, SQL and big data techs. And I believe that the best solutions lay in between, so be constantly learning is my credo. 
+
+skills:
+  architecture: > 
+    Data-intensive Applications *(expert)*, 
+    Business Continuity & Disaster recovery *(expert)*, 
+    Functional Specification *(expert)*,
+    High Availability Solutions *(expert)*,
+    Behavior-driven Design & Disesn *(good)*
+  programming_languages: >
+    Python *(expert)*, 
+    SQL *(expert)*, 
+    JavaScript *(beginner)*,
+    Java *(beginner)*
+  data_engineering: >
+    Spark *(expert)*, 
+    Hive *(expert)*, 
+    Airflow *(expert)*, 
+    BigQuery *(expert)*, 
+    Hadoop *(good)*, 
+    Apache Beam *(good)*, 
+    Redshift *(good)*, 
+    HBase *(beginner)*
+  others: >
+    GCP *(expert)*, 
+    Terraform *(expert)*, 
+    Git / Perforce *(expert)*, 
+    AWS *(good)*, 
+    Ansible *(good)*, 
+    Docker *(good)*, 
+    Jenkins *(good)*, 
+    Kubernetes *(beginner)*
+
+languages: >
+  English *(B2)*, Ukranian *(C2)*, Russian *(C2)*
+
+experience:
+- years: 2019
+  employer: SoftServe Inc.
+  job: Lead Data Engineer
+  duties:
+    - Design, code, test and debug technical complex solutions
+    - Design and build large-scale data processing systems
+    - Engagement of new clients and presale support
+    - Create prototypes and assist in proposal development for client engagement
+    - Establish engineering process
+    - R&D and rapid prototyping
+    - Organize and facilitate team and client meetings
+    - Maintain and document solutions in accordance with defined software engineering standards
+    - Develop specifications and technological approaches, coding patterns and key application components
+    - Regularly participate in reviews of team work products
+    - Estimate efforts required for project implementation and reach goals in compliance with a schedule
+    - Identify system and process deficiencies, propose and implement solutions and improvements
+    - Take full responsibility for the implementation of project parts including work on the new projects
+    - Continually seek opportunities to increase customer satisfaction and deepen relationship
+    - Assist in skills development and supervision of junior staff
+- years: 2017 -- 2018
+  employer: SoftServe Inc.
+  job: Lead Software Engineer
+  duties:
+    - Design, code, test and debug technical complex solutions
+    - Design and build large-scale data processing systems
+    - Engagement of new clients and presale support
+    - R&D and rapid prototyping
+    - Provide direction for the analysis, design, construction, integration, deployment and configuration of the system developed
+    - Develop clear understanding of client requirements mapped to system design and architecture
+    - Establish engineering process
+    - Organize and facilitate team and client meetings
+    - Track and resolve issues where solution deviates from the technical vision update technical vision when it’s necessary, communicate changes to the team, project management and client
+    - Take full responsibility for the implementation of project parts including work on the new projects
+    - Ensure the highest quality of software engineering, applying best practices and closing gaps
+    - Ensure quality of code and technical solutions produced by development team
+    - Assist in skills development and supervision of junior staff
+- years: 2016 -- 2017
+  employer: SoftServe Inc.
+  job: Senior Software Engineer
+  duties:
+    - Design, code, test and debug technical complex solutions
+    - Regularly participate in reviews of team work products
+    - Maintain and document programs in accordance with defined software engineering standards
+    - Maintain technical specifications and supplementary project documentation in compliance with the changes in the system or its environment
+    - Develop specifications and technological approaches for all but the most complex software applications
+    - Estimate efforts required for project implementation and accomplish the tasks in compliance with a schedule defined by technical management
+    - Take full responsibility for the implementation of project parts including work on the new projects
+    - Assist in facilitation of team and client meetings
+    - Resolve development issues of high complexity
+    - Create prototypes and assist in proposal development for client engagement
+    - Identify system and process deficiencies, propose and implement solutions and improvements
+    - Organize and facilitate team and client meetings
+    - Assist in skills development and supervision of junior staff
+- years: 2015 -- 2016
+  employer: SoftServe Inc.
+  job: Software Engineer
+  duties:
+    - Design, code, test and debug technical solutions in compliance with the defined engineering standards
+    - Assist in validation of technical solutions by participating in code inspections
+    - Maintain and document programs in accordance with defined software engineering standards
+    - Maintain technical specifications and supplementary project documentation in compliance with the changes in the system or its environment
+    - Participate in development of technical specifications and technological approaches
+    - Provide estimates of efforts required to implement the tasks assigned and accomplish the tasks in compliance with a schedule 
+    - Identify system and engineering deficiencies and recommend solutions and process improvements
+    - Contribute to and enforce coding standards
+    - Assist in skills development of junior staff
+    - Facilitate in development tasks prioritization for junior staff
+    - Assist in enforcement of development deadlines and schedules
+- years: 2014 -- 2015
+  employer: Lot Internet GmBH
+  job: Software Engineer
+  duties:
+    - Design, code, test and debug technical solutions in compliance with the defined engineering standards
+    - Participate in development of technical specifications and technological approaches
+    - Provide estimates of efforts required to implement the tasks assigned and accomplish the tasks in compliance with a schedule 
+    - Maintain and document programs in accordance with defined software engineering standards
+    - Identify system and engineering deficiencies and recommend solutions and process improvements
+    - Assist in skills development of junior staff
+- years: 2008 -- 2014
+  employer: PrJSC MTS Ukraine
+  job: Software Engineer
+  duties:
+    - Design, code, test and debug technical solutions in compliance with the defined engineering standards
+    - Participate in development of technical specifications and technological approaches
+    - Provide estimates of efforts required to implement the tasks assigned and accomplish the tasks in compliance with a schedule 
+    - Maintain and document programs in accordance with defined software engineering standards
+    - Identify system and engineering process deficiencies, propose and implement solutions and process improvements
+    - Maintaim and support company-wide network management solution
+    - Plan maintenance activities
+
+- years: 2006 -- 2008
+  employer: PJSC Ukrtelecom
+  job: System Administrator / Software Engineer
+  duties:
+    - Design, code, test and debug technical solutions in compliance with the defined engineering standards
+    - Architecture and design of subsystems and modules
+    - Product support and documentation maintenance
+    - Plan maintenance activities
+    - Resolve service incidents as Layer 3 support, perform troubleshooting and incident escalation
+    - Analyze performance, health and resources usage of infrastructure services and proactively manage their resource allocation
+    - Assist in skills development of junior staff
+
+education:
+- year: 2007
+  subject: Telecommunications Technology and Applications
+  degree: Master\'s degree
+  institute: National Technical University of Ukraine - Kyiv Polytechnic Institute
+- year: 2005
+  subject: Electronic Devices
+  degree: Bachelor\'s degree
+  institute: National Technical University of Ukraine - Kyiv Polytechnic Institute
+
+certification:
+- year: 2018
+  subject: Professional Cloud Architect
+  issuer: Google Cloud
+  url: https://www.credential.net/2505ec09-cd7e-481d-b719-4dcc7e1c2df8
+- year: 2018
+  subject: Professional Data Engineer
+  issuer: Google Cloud
+  url: https://www.credential.net/02d2c8c4-beb4-48e1-a56f-6c83f519d015?key=521462ec616a8a5421d8658adfcd3c29286040149a1637082cbed3fa24c071b2
+- year: 2015
+  subject: Python 3.3
+  issuer: Brainbench
+  url: https://www.brainbench.com/xml/bb/transcript/public/viewtranscript.xml?pid=11514077
+
+# Settings
+mainfont: Hoefler Text
+altfont: Helvetica Neue
+monofont: Courier
+fontsize: 12pt
+subfontsize: 10pt
+sublinespacing: 12pt
+lang: en-US
+geometry: a4paper, left=30mm, right=15mm, top=20mm, bottom=20mm, marginparwidth=30mm
+---
