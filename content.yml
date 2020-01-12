@@ -6,7 +6,7 @@ who:
 address:
 - Kyiv, Ukraine
 phone: "+380 XX XXX-XX-XX"
-email: john.doe@cloud.xyz
+email: max.ligus@gmail.com
 # Insert URLs without http://
 urls:
 - linkedin.com/in/mligus
@@ -51,7 +51,7 @@ skills:
     Kubernetes *(beginner)*
 
 languages: >
-  English *(B2)*, Ukranian *(C2)*, Russian *(C2)*
+  English *(C1)*, Ukranian *(C2)*, Russian *(C2)*
 
 experience:
 - years: 2019
